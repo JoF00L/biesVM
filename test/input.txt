@@ -1,0 +1,16 @@
+; Ensamblador
+LDV 1      ; Cargar el valor de 'a' (1)
+BST 0 0    ; Guardar en la posición 0 de la memoria
+
+LDV 656    ; Cargar el valor de 'b' (656)
+BST 0 1    ; Guardar en la posición 1 de la memoria
+
+BLD 0 0    ; Cargar el valor de 'a'
+LDV 10     ; Cargar el valor 10
+MUL        ; Multiplicar 'a' por 10
+
+BLD 0 1    ; Cargar el valor de 'b'
+ADD        ; Sumar el resultado de 'a * 10' con 'b'
+
+PRN        ; Imprimir el resultado (saludo)
+HLT        ; Detener la ejecución
